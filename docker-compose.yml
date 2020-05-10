@@ -4,6 +4,8 @@ services:
     image: mern-back
   db:
     image: mongo
+    port:
+      - 27017:27017
   front:
     image: mern-front
     ports:
