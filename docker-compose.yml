@@ -1,0 +1,10 @@
+version: "3"
+services:
+  back:
+    image: mern-back
+    ports: -4000:4000
+  db:
+    image: mongo
+  front:
+    image: mern-front
+    porst: 8000:80
