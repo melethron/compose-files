@@ -7,4 +7,5 @@ services:
     image: mongo
   front:
     image: mern-front
-    porst: 8000:80
+    ports:
+      - 8000:80
