@@ -11,8 +11,11 @@ services:
     volumes:
       - mongodb:/data/db
   front:
-    image: localhost:5000/mern-front
+    image: mern-front
     ports:
       - 8000:80
+    volumes:
+      - front:/usr/share/nginx/
 volumes:
   mongodb:
+  front:
