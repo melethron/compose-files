@@ -9,6 +9,6 @@ services:
     ports:
       - 27017:27017
   front:
-    image: mern-front
+    image: localhost:5000/mern-front
     ports:
       - 8000:80
