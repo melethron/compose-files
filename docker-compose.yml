@@ -8,7 +8,13 @@ services:
     image: mongo
     ports:
       - 27017:27017
+    volumes:
+      - type: volume
+      source: mongodb
+      target: /data/db
   front:
     image: localhost:5000/mern-front
     ports:
       - 8000:80
+volumes:
+  mongodb:
