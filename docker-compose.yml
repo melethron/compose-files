@@ -10,8 +10,8 @@ services:
       - 27017:27017
     volumes:
       - type: volume
-      source: mongodb
-      target: /data/db
+        source: mongodb
+        target: /data/db
   front:
     image: localhost:5000/mern-front
     ports:
